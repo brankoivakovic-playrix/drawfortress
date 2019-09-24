@@ -2,30 +2,31 @@
 
 #include "Common.h"
 
+#include "Serializer/Serializer.h"
+
 class ISerializer;
 class IRender;
 class World;
 
 
-
 class Game
 {
 public:
-	static Game* instance();
+	static Game& Instance();
 
 	int Loop();
 
-	void Pause();
-
-	void Resume();
-
 	void Serialize();
+
+	void Draw();
+
+	World& GetWorld() const;
+	
 private:
 
 	Game();
 
-	std::shared_ptr<IRender>     _render;
-	std::shared_ptr<World>       _world;
-	std::shared_ptr<ISerializer> _serializer;
-	//std::vector<std::week_ptr
+	unique_ptr<ISerializer> _serializer;
+	unique_ptr<World>       _world;
+	time_point _startTime = chrono::steady_clock::now();
 };
