@@ -1,15 +1,24 @@
 #pragma once
 
 #include "Common.h"
+#include "Serializable.h"
 
-class ISerializable;
+
 
 class ISerializer
 {
 public:
-	virtual bool SerializeObject(std::string Key, ISerializable& Value) = 0;
+	virtual ~ISerializer() = default;
 
-	virtual bool SerializeString(std::string Key, std::string& Value) = 0;
+	virtual bool SerializeIntT  (Serializable& object, string key, int_t&  value) = 0;
 
-	virtual bool SerializeBool(std::string Key, bool& Value) = 0;
+	virtual bool SerializeString(Serializable& object, string key, string& value) = 0;
+
+	virtual bool SerializeBool  (Serializable& object, string key, bool&   value) = 0;
+
+	virtual bool SerializeFloat (Serializable& object, string key, float&  value) = 0;
+
+	virtual bool Save(string path) = 0;
+
+	virtual bool Load(string path) = 0;
 };
