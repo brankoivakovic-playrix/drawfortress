@@ -84,13 +84,16 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>D:\drawfortress\drawfortress\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,6 +111,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,7 +120,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -124,7 +128,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>D:\drawfortress\drawfortress\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,32 +162,52 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Actors\Actor.h" />
+    <ClInclude Include="src\Actors\Enemy.h" />
+    <ClInclude Include="src\Actors\MovingSystem.h" />
+    <ClInclude Include="src\Actors\Player.h" />
     <ClInclude Include="src\Common.h" />
+    <ClInclude Include="src\Editor\GameEditor.h" />
+    <ClInclude Include="src\Entity.h" />
     <ClInclude Include="src\Game.h" />
-    <ClInclude Include="src\Inventory\Items\InvItemHealt.h" />
+    <ClInclude Include="src\Input\ConsoleInput.h" />
+    <ClInclude Include="src\Input\ConsoleInputHandler.h" />
+    <ClInclude Include="src\Input\ConsoleInputManager.h" />
+    <ClInclude Include="src\Inventory\Items\InvItemHealth.h" />
     <ClInclude Include="src\Inventory\Inventory.h" />
     <ClInclude Include="src\Inventory\InventoryItem.h" />
-    <ClInclude Include="src\Render\ConsoleRender.h" />
-    <ClInclude Include="src\Render\IRenderable.h" />
-    <ClInclude Include="src\Player\Player.h" />
+    <ClInclude Include="src\Math\Vector2d.h" />
+    <ClInclude Include="src\Render\Color.h" />
     <ClInclude Include="src\Render\IRender.h" />
-    <ClInclude Include="src\Serializer\ISerializable.h" />
+    <ClInclude Include="src\Render\Render.h" />
+    <ClInclude Include="src\Render\IRenderable.h" />
+    <ClInclude Include="src\Render\ThirdParty\ColorPalete.h" />
+    <ClInclude Include="src\Serializer\Serializable.h" />
     <ClInclude Include="src\Serializer\ISerializer.h" />
     <ClInclude Include="src\Inventory\Items\InvItemShield.h" />
     <ClInclude Include="src\Inventory\Items\InvItemWeapon.h" />
+    <ClInclude Include="src\Serializer\Serializer.h" />
     <ClInclude Include="src\Weapon\Weapon.h" />
     <ClInclude Include="src\World\WorldField.h" />
     <ClInclude Include="src\World\World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Actors\Actor.cpp" />
+    <ClCompile Include="src\Actors\Enemy.cpp" />
+    <ClCompile Include="src\Actors\MovingSystem.cpp" />
+    <ClCompile Include="src\Actors\Player.cpp" />
     <ClCompile Include="src\Game.cpp" />
-    <ClCompile Include="src\Inventory\Items\InvItemHealt.cpp" />
+    <ClCompile Include="src\Input\ConsoleInputManager.cpp" />
+    <ClCompile Include="src\Inventory\Inventory.cpp" />
+    <ClCompile Include="src\Inventory\Items\InvItemHealth.cpp" />
     <ClCompile Include="src\Inventory\InventoryItem.cpp" />
-    <ClCompile Include="src\Player\Player.cpp" />
     <ClCompile Include="src\Inventory\Items\InvItemShield.cpp" />
     <ClCompile Include="src\Inventory\Items\InvItemWeapon.cpp" />
-    <ClCompile Include="src\Render\ConsoleRender.cpp" />
+    <ClCompile Include="src\Render\Render.cpp" />
+    <ClCompile Include="src\Render\ThirdParty\ColorPalete.cpp" />
+    <ClCompile Include="src\Serializer\Serializable.cpp" />
+    <ClCompile Include="src\Serializer\Serializer.cpp" />
     <ClCompile Include="src\World\WorldField.cpp" />
     <ClCompile Include="src\World\World.cpp" />
   </ItemGroup>

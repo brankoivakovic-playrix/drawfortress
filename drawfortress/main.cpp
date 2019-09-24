@@ -5,7 +5,7 @@
 
 int main()
 {
-	Game::instance()->Loop();
+	Game::Instance().Loop();
 
     return 0;
 }
