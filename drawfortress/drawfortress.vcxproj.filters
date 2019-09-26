@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{46b5a023-4cb3-41ac-843e-ef1cd7aa2059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{c706e35d-250d-44ce-80d6-735e3592e89f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inventory">
+      <UniqueIdentifier>{51b91b27-55c7-4784-9896-c3e8c6ba6cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Serializer">
+      <UniqueIdentifier>{c52d1a77-db7b-4fa6-9e27-cc3f524eac15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inventory\Items">
+      <UniqueIdentifier>{c38199e8-e246-473c-af51-9ac962fa688f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Weapon">
+      <UniqueIdentifier>{114fd96c-55e9-4101-996f-ca18ea64bffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{c5f1f894-ccb9-44f9-ba4d-970836649be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actors">
+      <UniqueIdentifier>{93eb83bf-3ed8-4373-8cd3-dd22c1d614db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{352066ed-be24-4a80-9992-2b3dcb97e032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\ThirdParty">
+      <UniqueIdentifier>{a9e3052a-8d71-4020-b67e-f51d61e7d66b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{94e6fd9f-56a5-4288-af74-21275b65e598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory\InventoryItem.h">
+      <Filter>Source Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory\Inventory.h">
+      <Filter>Source Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory\Items\InvItemShield.h">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory\Items\InvItemWeapon.h">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Weapon\Weapon.h">
+      <Filter>Source Files\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\World\World.h">
+      <Filter>Source Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\ISerializer.h">
+      <Filter>Source Files\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\World\WorldField.h">
+      <Filter>Source Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Vector2d.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory\Items\InvItemHealth.h">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\Actor.h">
+      <Filter>Source Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\Enemy.h">
+      <Filter>Source Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\Player.h">
+      <Filter>Source Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Render.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\Color.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\ConsoleInputHandler.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\ConsoleInputManager.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\ConsoleInput.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actors\MovingSystem.h">
+      <Filter>Source Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\IRender.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\IRenderable.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Render\ThirdParty\ColorPalete.h">
+      <Filter>Source Files\Render\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\Serializer.h">
+      <Filter>Source Files\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\Serializable.h">
+      <Filter>Source Files\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Editor\GameEditor.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory\InventoryItem.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory\Items\InvItemShield.cpp">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory\Items\InvItemWeapon.cpp">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\World\World.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="src\World\WorldField.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory\Items\InvItemHealth.cpp">
+      <Filter>Source Files\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\Actor.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory\Inventory.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\ConsoleInputManager.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\Player.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\Enemy.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actors\MovingSystem.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\Render.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Render\ThirdParty\ColorPalete.cpp">
+      <Filter>Source Files\Render\ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Serializer\Serializer.cpp">
+      <Filter>Source Files\Serializer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
