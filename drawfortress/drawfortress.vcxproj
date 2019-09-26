@@ -206,7 +206,6 @@
     <ClCompile Include="src\Inventory\Items\InvItemWeapon.cpp" />
     <ClCompile Include="src\Render\Render.cpp" />
     <ClCompile Include="src\Render\ThirdParty\ColorPalete.cpp" />
-    <ClCompile Include="src\Serializer\Serializable.cpp" />
     <ClCompile Include="src\Serializer\Serializer.cpp" />
     <ClCompile Include="src\World\WorldField.cpp" />
     <ClCompile Include="src\World\World.cpp" />
